@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<meta name="author" content="Mohit Kumar">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Alarm Clock</title>
+
+		<!-- This is a Font Awesome Web kit Link to use some icons in the project -->
+		<script src="https://kit.fontawesome.com/3c78e282e0.js" crossorigin="anonymous"></script>
+
+		<!-- This link contains all the CSS Styling -->
+		<link rel="stylesheet" type="text/css" href="Alarm-clock.css">
+
+	</head>
+
+	<body>
+
+		<!-- This button can be used to change the theme from light to dark and vice-versa -->
+		<div class='theme'>
+
+			<!-- <i class="fa-solid fa-sun"></i> -->
+			<i class="fa-solid fa-moon icon"></i>
+			
+		</div>
+		
+
+		<!-- This div will show the current Date and Time on the Screen -->
+		<div id="clock" class='clock-light'>
+
+			<i class="fa-regular fa-clock"></i>
+
+			<div id='time'>
+				
+			</div>
+
+		</div>
+
+
+		<!-- Button to create an Alarm -->
+		<div id="btn">
+
+			<input type="time" id='datetime'>
+			<button onclick="setAlarm()">Set Alarm</button>		
+
+		</div>
+		
+
+		<!-- This shows the list of all the alarms which has been created as of now -->
+		<div id='list'>
+
+			<!-- <p class="list-item">
+				<span>hh:mm AM </span>
+				<i class="fa-solid fa-trash-can delete-alarm" data-val = 'demoValue'></i>
+			</p> -->
+
+		</div>
+
+
+		<!-- This link contains all the Javascript Code -->
+		<script type="text/javascript" src="Alarm-clock.js"></script>
+
+	</body>
+
+</html>

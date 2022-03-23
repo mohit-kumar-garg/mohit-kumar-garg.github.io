@@ -1,0 +1,153 @@
+/*Button to Control Themes(light and dark theme)*/
+
+.theme{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+
+	position: absolute;
+	right: 10px;
+	top: 10px;
+
+	border: 1px solid black;
+	border-radius: 50%;
+
+	transition: all 0.25s;
+
+	font-size: 2rem;
+	text-align: center;
+
+	padding: 5px;
+}
+
+.theme-dark{
+	border: 1px solid white;
+}
+
+.theme:hover{
+	box-shadow: 0px 0px 10px 0px black;
+}
+
+.theme-dark:hover{
+	box-shadow: 0px 0px 10px 0px white;
+}
+
+
+
+/*Styling the clock which will show the timing in the format: 	hh:mm:ss AM/PM 
+																Month dd, yyyy */
+
+#clock{
+	display: inline-flex;
+	width: 90vw;
+	height: 50vh;
+
+	flex-direction: column;
+
+	justify-content: center;
+	align-items: center;
+
+	padding: 10px;
+	border-radius: 10px;
+	margin: 10px 2.5vw;
+
+}
+
+.clock-light{
+	box-shadow: 0px 0px 10px 0px black;
+}
+
+.clock-dark{
+	box-shadow: 0px 0px 10px 0px white;
+}
+
+#clock i{
+	font-size: 5rem;
+
+}
+
+#time p{
+
+	font-size: 5rem;
+
+	margin: 5px;
+}
+
+
+
+/*Styling for the button to create Alarm*/
+
+#btn{
+	text-align: center;
+}
+
+#btn *{
+	padding: 10px;
+	margin: 10px;
+
+	border: 1px solid black;
+	border-radius: 10px;
+
+	font-size: 1rem;
+}
+
+
+
+/*Alarm List*/
+
+#list{
+	display: inline-block;
+	width: 50vw;
+
+	margin: 10px 25vw;
+
+}
+
+#list p{
+	display: inline-block;
+	height: 30px;
+	width: 100%;
+
+	position: relative;
+
+	padding: 2px;
+	margin: 2px;
+
+	font-size: 1.5rem;
+
+}
+
+.list-item{
+	box-shadow: 0px 0px 2px 0px black;
+}
+
+.list-item-dark{
+	box-shadow: 0px 0px 2px 0px white;
+}
+
+#list i{
+	position: absolute;
+	right: 10%;
+}
+
+#list i:hover{
+	color: red;
+}
+
+
+
+
+/*Making the page responsive when the weight is less than 720px */
+
+@media all and (max-width:720px){
+
+	#time p{
+		font-size: 3rem;
+	}
+
+	#list{
+		width: 90vw;
+		margin: 10px 10px;
+	}
+
+}
